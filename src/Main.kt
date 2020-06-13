@@ -161,8 +161,9 @@ fun convertNumber(n: String): String {
 
 //		 DEBUG
 //		println("Converting $bundle, bundleIndex is $bundleIndex")
+//		println("Index: ${separated.size - i - 1}")
 
-		val gender = when (i % 2 == 0) {
+		val gender = when ((separated.size - i - 1) % 2 == 0) {
 			// It's even, thus MALE
 			true -> Gender.MALE
 			// It's odd, thus FEMALE
@@ -192,7 +193,7 @@ fun convertNumber(n: String): String {
 
 
 fun main() {
-	
-	println(convertNumber("444_000_111_001_001_420_666"))
+
+	println(convertNumber("445_001_001_001_000_000"))
 
 }
