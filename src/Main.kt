@@ -172,6 +172,7 @@ fun convertNumber(n: String): String {
 
 		output += when (bundle) {
 			1 -> if (gender == Gender.MALE) "jeden" else "jedna"
+			2 -> if (gender == Gender.MALE) "dva" else "dve"
 			else -> convertBundle(bundle)
 		} + " " + generateBase(
 				bundleIndex,
@@ -194,6 +195,6 @@ fun convertNumber(n: String): String {
 
 fun main() {
 
-	println(convertNumber("445_001_001_001_000_000"))
+	println(convertNumber("584357894758927582935789357839275328955523516436436327537547474553736486854867536436456643654654654645666_849_789_624_344_271_161_203"))
 
 }
